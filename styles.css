@@ -3,37 +3,38 @@
 
 * {
   box-sizing: border-box;
-  /* background-color: #134b70;
-  color: white; */
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: #134b70;
+  color: white;
   font-family: "Roboto";
+}
+
+a {
+  text-decoration: none;
+  color: #201e43;
 }
 
 header {
   display: flex;
-  justify-content: start;
-  background-color: green;
-  padding: 0;
-  margin: 0;
+  justify-content: space-between;
+  background-color: #eeeeee;
+  padding: 15px 0;
+  margin: 0 0 50px 0;
 }
 
-.navigation {
-  display: inline;
-  justify-content: start;
-}
-
-nav {
-  display: inline-block;
-  margin-right: 50px;
+.logo h3 {
+  font-weight: 900;
+  padding: 0 0 0 40px;
 }
 
 .links {
   list-style: none;
   display: flex;
-  justify-content: center;
-  gap: 20px;
-  font-size: 20px;
-}
-
-.links li {
-  display: inline-block;
+  padding: 0 50px 0 0;
+  gap: 30px;
+  font-weight: 400;
 }
