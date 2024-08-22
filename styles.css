@@ -120,8 +120,15 @@ td {
   font-weight: 300;
 }
 
-#resume video {
-  height: 480px;
+#resume img {
   width: 720px;
-  margin-left: 40vh;
+  height: auto;
+  margin: 20px 20% 20px 20%;
+}
+
+#contact {
+  margin: 100px 50px;
+  width: auto;
+  text-align: center;
+  border: 1px solid white;
 }
