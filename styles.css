@@ -47,3 +47,28 @@ header {
 .links li a:hover {
   color: #508c9b;
 }
+
+main {
+  margin: 40px 0;
+}
+
+#about {
+  border: white 1px solid;
+  border-radius: 80px 0 80px 0;
+}
+
+#about h2 {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  letter-spacing: 2px;
+  font-weight: 300;
+}
+
+#about p {
+  margin: 20px;
+  text-align: center;
+  line-height: 40px;
+  font-family: "Poppins";
+  font-weight: 500;
+}
