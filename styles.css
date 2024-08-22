@@ -22,8 +22,9 @@ header {
   display: flex;
   justify-content: space-between;
   background-color: #eeeeee;
-  padding: 15px 0;
+  padding: 20px 0;
   margin: 0 0 50px 0;
+  border-radius: 0 0 25% 25%;
 }
 
 .logo h3 {
@@ -36,5 +37,13 @@ header {
   display: flex;
   padding: 0 50px 0 0;
   gap: 30px;
-  font-weight: 400;
+  font-weight: 500;
+}
+
+.links li a {
+  transition: color 0.3s;
+}
+
+.links li a:hover {
+  color: #508c9b;
 }
