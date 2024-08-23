@@ -241,7 +241,7 @@ td {
 .buttons button:hover {
   background-color: #eeeeee;
   color: #201e43;
-  border: solid 1px #201e43;
+  border: solid 1px #508c9b;
 }
 
 .right-contact {
@@ -258,4 +258,38 @@ td {
   .right-contact {
     display: none;
   }
+}
+
+footer {
+  background-color: #eeeeee;
+  color: #201e43;
+  border-radius: 25% 25% 0 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+footer h4 {
+  font-weight: 300;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  font-family: "Poppins";
+  font-weight: 500;
+}
+
+footer ul li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+footer ul img {
+  width: 20px;
 }
