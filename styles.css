@@ -9,7 +9,7 @@
 
 html {
   background-color: #134b70;
-  color: white;
+  color: #eeeeee;
   font-family: "Roboto";
 }
 
@@ -38,6 +38,7 @@ header {
   padding: 0 50px 0 0;
   gap: 30px;
   font-weight: 500;
+  font-size: 20px;
 }
 
 .links li a {
@@ -55,14 +56,21 @@ main {
 #about {
   margin: 100px 50px;
   padding: 20px;
-  border: white 1px solid;
+  border: #eeeeee 1px solid;
   border-radius: 80px 0 80px 0;
+}
+
+@media (max-width: 1000px) {
+  #about {
+    margin: 10px 20px;
+  }
 }
 
 #about h2 {
   text-align: center;
   letter-spacing: 2px;
   font-weight: 300;
+  font-size: 30px;
 }
 
 #about p {
@@ -78,11 +86,18 @@ main {
   padding: 20px;
 }
 
+@media (max-width: 1000px) {
+  #work {
+    margin: 50px 20px;
+  }
+}
+
 #work h2 {
   text-align: center;
   letter-spacing: 2px;
   margin-bottom: 40px;
   font-weight: 300;
+  font-size: 30px;
 }
 
 #work table,
@@ -99,7 +114,7 @@ td {
 #work th {
   width: auto;
   height: 50px;
-  background-color: white;
+  background-color: #eeeeee;
   color: #201e43;
 }
 
@@ -112,12 +127,14 @@ td {
 #resume {
   margin: 100px 50px;
   padding: 20px;
+  font-size: 30px;
 }
 
 #resume h2 {
   text-align: center;
   letter-spacing: 2px;
   font-weight: 300;
+  font-size: 30px;
 }
 
 #resume img {
@@ -126,9 +143,119 @@ td {
   margin: 20px 20% 20px 20%;
 }
 
+@media (max-width: 1000px) {
+  #resume img {
+    width: 360px;
+    height: auto;
+  }
+}
 #contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
   margin: 100px 50px;
-  width: auto;
-  text-align: center;
-  border: 1px solid white;
+  border: 1px solid #eeeeee;
+  border-radius: 5px;
+  background-color: #201e43;
+}
+
+.left-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-left: 15px;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.contact-title h2 {
+  margin: 30px 0 5px 0;
+  color: #eeeeee;
+  letter-spacing: 2px;
+  font-weight: 300;
+  font-size: 30px;
+}
+
+.contact-title hr {
+  width: 120px;
+  height: 5px;
+  border: none;
+  background-color: #eeeeee;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.left-contact input {
+  width: 400px;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding-left: 25px;
+  font-family: "Poppins";
+  font-weight: 500;
+  border-radius: 50px;
+}
+
+.left-contact input:focus {
+  border: 2px solid #508c9b;
+}
+
+.left-contact textarea {
+  width: 400px;
+  height: 200px;
+  padding-top: 15px;
+  border-radius: 20px;
+  padding-left: 25px;
+  font-family: "Poppins";
+  font-weight: 500;
+  border: none;
+  outline: none;
+}
+
+.left-contact textarea:focus {
+  border: 2px solid #508c9b;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.buttons button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  padding: 10px;
+  font-family: "Poppins";
+  font-weight: 500;
+  background-color: #201e43;
+  color: #eeeeee;
+  border: solid 1px #eeeeee;
+  border-radius: 20px;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.buttons button:hover {
+  background-color: #eeeeee;
+  color: #201e43;
+  border: solid 1px #201e43;
+}
+
+.right-contact {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-height: 100vh;
+}
+
+@media (max-width: 1200px) {
+  #contact {
+    margin: 50px 20px;
+  }
+  .right-contact {
+    display: none;
+  }
 }
